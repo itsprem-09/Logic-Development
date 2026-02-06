@@ -3,6 +3,11 @@
 // Input: 101.110
 // Output: 5.75
 
+// 101.110 (binary)
+// = (1×2² + 0×2¹ + 1×2⁰) + (1×2⁻¹ + 1×2⁻² + 0×2⁻³)
+// = (4 + 0 + 1) + (0.5 + 0.25 + 0)
+// = 5.75
+
 #include <stdio.h>
 #include <math.h>
 #include <string.h>

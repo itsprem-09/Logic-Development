@@ -7,7 +7,7 @@
 
 void main(){
     int n = 10;
-
+    
     int sq = n * n;
     int count = 0;
     int temp = n;

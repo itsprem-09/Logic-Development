@@ -4,7 +4,8 @@ void main(){
     int hour = 3;
     int minute = 30;
 
-    int hourAngle = (hour % 12) * 30 + (minute * 0.5); // Each hour = 30 degrees, each minute = 0.5 degrees
+    hour = hour % 12; // Convert hour to 12-hour format
+    int hourAngle = (hour * 30) + (minute * 0.5); // Each hour = 30 degrees, each minute contributes 0.5 degrees
     int minuteAngle = minute * 6; // Each minute = 6 degrees
 
     int angle = hourAngle - minuteAngle;
