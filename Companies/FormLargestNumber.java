@@ -12,6 +12,9 @@ public class FormLargestNumber {
         // sort the string array based on the custom comparator
         Arrays.sort(strNums, (a, b) -> (b + a).compareTo(a + b));  // sort in descending order based on the concatenated string
         
+
+        System.out.println(Arrays.toString(strNums));
+
         // if the largest number is 0, return "0"
         if (strNums[0].equals("0")) {
             return "0";

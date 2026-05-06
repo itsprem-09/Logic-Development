@@ -24,6 +24,26 @@ public class LEGOTower {
         return redSum > blueSum ? redSum : blueSum;
     }
 
+    public static int legoTower(int[] red, int[] blue){
+        int redSum = 0;
+        int blueSum = 0;
+
+        for (int i = 0; i < red.length; i++) {
+            if (i % 2 == 0) {
+                redSum += red[i];
+                blueSum += blue[i];
+            }
+            else{
+                redSum += blue[i];
+                blueSum += red[i];
+            }
+        }
+
+        System.out.println("REd : " +redSum+" blue "+blueSum);
+
+        return Math.max(redSum, blueSum);
+    }
+
     public static int findMaxHeightEfficient(int[] red, int[] blue) {
         int n = red.length;
 

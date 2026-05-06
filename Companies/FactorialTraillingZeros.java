@@ -1,5 +1,28 @@
 public class FactorialTraillingZeros {
 
+    public static int fact(int n){
+        int ans = 1;
+        for (int i = 1; i <= n; i++) {
+            ans *= i;
+        }
+        return ans;
+    }
+
+    public static int countTrailing(int n){
+        int factAns = fact(n);
+
+        String str = Integer.toString(factAns);
+
+        int count = 0;
+        for (int i = str.length() - 1; i >= 0; i--) {
+            if (str.charAt(i) != '0') {
+                return count;
+            }
+            count++;
+        }
+        return count;
+    }
+
     public static int countTrailingZerosBruteForce(int n) {
         int factorial = 1;
         for (int i = 1; i <= n; i++) {

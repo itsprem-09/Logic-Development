@@ -52,6 +52,8 @@ public class SentenceSimilarity {
         for (int i = 0; i < scores.length; i++) {
             map.put(scores[i], sentences[i]);
         }
+
+        System.out.println(map.toString());
         
         ArrayList<String> list = new ArrayList<>();
 
